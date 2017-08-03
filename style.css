@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#MyForm label, #MyForm input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#MyForm button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#MyForm .field {
+    margin-top: 5px;
+}
+
+#MyForm input {
+    border: 1px solid grey;
+}
+
+#MyForm input.error {
+    border: 1px solid red;
+}
+
+#resultContainer {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#resultContainer.success {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+#resultContainer.progress {
+    color: white;
+    background-color: darkgrey;
+}
+
+#resultContainer.error {
+    color: white;
+    background-color: red;
+}
