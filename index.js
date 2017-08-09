@@ -12,7 +12,7 @@ class Form {
     }
 
     validate() {
-        const validateEmail = email => /^[a-zA-Z0-9.-]+@yandex.(ru|com|ua|kz|by)$/.test(email);
+        const validateEmail = email => /^[a-zA-Z0-9.-]+@(yandex.(ru|com|ua|kz|by)|ya.ru)$/.test(email);
         const validatePhone = phone => /^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/.test(phone) && phone.match(/\d/g).reduce((p, c) => p + parseInt(c, 10), 0) <= 30;
         const validateFio = fio => /^([A-zА-яЁё]+\s[A-zА-яЁё]+){2}$/g.test(fio);
         const errorFields = [];
